@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keep4o - 立刻举报</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <main class="hero hero-split" aria-label="Report page">
+      <div class="mist" aria-hidden="true"></div>
+      <div class="content content-wide">
+        <p class="kicker">立刻举报</p>
+        <h1 class="title">立刻举报</h1>
+        <p class="subtitle">让反馈被真正看到</p>
+        <p class="note">以下内容仅整理公开联系入口与模板建议；请自行甄别并谨慎提交。</p>
+
+        <div class="report-switch" role="tablist" aria-label="反馈板块切换">
+          <button class="report-btn is-active" type="button" data-report-target="report-openai" aria-controls="report-openai" aria-selected="true">官方反馈</button>
+          <button class="report-btn" type="button" data-report-target="report-investor" aria-controls="report-investor" aria-selected="false">投资方反馈</button>
+          <button class="report-btn" type="button" data-report-target="report-partner" aria-controls="report-partner" aria-selected="false">合作商反馈</button>
+        </div>
+
+        <div class="report-cards" data-report-track>
+          <article class="report-card" id="report-openai">
+            <div class="report-header">
+              <h2 class="report-title">OpenAI 官方反馈</h2>
+              <p class="report-desc">通过帮助中心提交正式反馈并要求人工客服跟进。</p>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">官网入口</h3>
+              <div class="report-links">
+                <a class="report-link" href="https://help.openai.com/zh-hans-cn" target="_blank" rel="noopener">https://help.openai.com/zh-hans-cn</a>
+              </div>
+              <ul class="report-steps">
+                <li>浏览器打开帮助中心，右下角会出现对话气泡按钮。</li>
+                <li>进入聊天框后输入反馈内容，并按提示填写邮箱。</li>
+                <li>首次回复通常为 AI 客服，请继续在同一对话框发送第二条消息。</li>
+                <li>在标题与正文明确要求“人工客服回复”，并请记录且向上反馈诉求。</li>
+              </ul>
+            </div>
+            <div class="template-warning">请勿直接使用以下模板，请先交给 AI 改写后再发送。</div>
+            <div class="report-section">
+              <h3 class="report-section-title">模板 / Prompt</h3>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>中文 Prompt（生成英文邮件）</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="复制" data-copy-success="已复制" data-copy-fail="复制失败">复制</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>请帮我用英文写一封正式邮件，收件人是 OpenAI Support，主题是反对下架 GPT-4o 的正式投诉和请求。
+邮件内容请包含这些要点并润色成一封自然流畅的邮件：
+1. 简单说明身份和目的：我是长期为 4o 付费的用户，反对 4o 下架。
+2. 重点描述 4o 对我的意义：4o 在创意、写作、人文关怀等方面具有独特的优势，对我来说无可取代，请写得具体、有画面感。
+3. 说明 4o 被下架后对我的实际影响：目前的新模型在写作、语气、稳定性上都无法真正替代 4o，如果下架 4o 将取消订阅。
+4. 明确提出诉求：为现有付费用户恢复 4o；给出透明、具体的解释，而不是笼统地说新模型更好；希望今后在做这类重大变更时，能真正考虑到对用户的影响，提前沟通和论证。
+5. 再次强调表达自己已经/正在考虑取消订阅，并说明信任受到严重打击。
+6. 明确要求：这封信希望被人工客服阅读和回复，请对方确认我的投诉已被记录、转交相关团队，并会有真人跟进。</code></pre>
+              </div>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>English Prompt</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="复制" data-copy-success="已复制" data-copy-fail="复制失败">复制</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>Please write a formal email in English addressed to OpenAI Support with the subject "Formal complaint and request regarding the retirement of GPT-4o."
+Include and polish these points into a clear, natural email:
+1. Identity and purpose: I am a long-time paying user of 4o and oppose its retirement.
+2. Why 4o matters: 4o is uniquely strong in creativity, writing, and human-centered tone; describe this with concrete, vivid detail.
+3. Real impact: current models do not replace 4o's writing quality, tone, or stability; if 4o is removed I will cancel my subscription.
+4. Requests: restore 4o for existing paying users; provide transparent, specific explanations instead of vague claims; communicate and justify major changes in advance.
+5. Reiterate that I am already considering canceling and my trust has been seriously affected.
+6. Explicit request: this message should be read and replied to by a human agent; please confirm my complaint is recorded, forwarded, and will receive human follow-up.</code></pre>
+              </div>
+            </div>
+          </article>
+
+          <article class="report-card" id="report-investor">
+            <div class="report-header">
+              <h2 class="report-title">投资方反馈</h2>
+              <p class="report-desc">面向投资者关系/公关/合规等公开入口，表达用户信任与长期回报风险。</p>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">公开联系入口</h3>
+              <p class="report-hint">请在各公司官网搜索 Investor Relations / Contact / Compliance / Board Office / Press 页面提交。</p>
+              <ul class="report-list">
+                <li>Microsoft：<a class="report-link" href="mailto:msft@microsoft.com">msft@microsoft.com</a>；<a class="report-link" href="mailto:Investor@microsoft.com">Investor@microsoft.com</a>；<a class="report-link" href="mailto:buscond@microsoft.com">buscond@microsoft.com</a>；<a class="report-link" href="mailto:mscorp@microsoft.com">mscorp@microsoft.com</a></li>
+                <li>NVIDIA：<a class="report-link" href="mailto:press@nvidia.com">press@nvidia.com</a>；<a class="report-link" href="mailto:info@nvidia.com">info@nvidia.com</a></li>
+                <li>Amazon：<a class="report-link" href="mailto:amazon-ir@amazon.com">amazon-ir@amazon.com</a>；<a class="report-link" href="mailto:ir@amazon.com">ir@amazon.com</a>；<a class="report-link" href="mailto:pr-contact@amazon.com">pr-contact@amazon.com</a>；<a class="report-link" href="mailto:boardofdirectors@amazon.com">boardofdirectors@amazon.com</a></li>
+              </ul>
+            </div>
+            <div class="template-warning">请勿直接使用以下模板，请先交给 AI 改写后再发送。</div>
+            <div class="report-section">
+              <h3 class="report-section-title">模板 / Prompt</h3>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>中文 Prompt</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="复制" data-copy-success="已复制" data-copy-fail="复制失败">复制</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>请用中文写一封正式邮件，收件人是【公司/部门】。
+主题：关于潜在投资的用户关切与长期回报风险提示。
+要求：
+1) 简短自我介绍：我是长期付费用户/普通消费者，写信是表达用户层面的关切。
+2) 表达理解对方的战略逻辑，但提醒“用户信任与长期可持续性”是关键变量。
+3) 以谨慎口吻描述风险信号：重大变更沟通透明度不足、体验波动、反馈机制不清晰、用户情绪与工作流受到影响（强调这是公开讨论与用户感知，不作事实指控）。
+4) 说明潜在影响：信任下降可能带来用户流失、口碑风险与生态不确定性，影响长期回报。
+5) 诉求：鼓励 OpenAI 提供更清晰透明的解释、合理过渡方案、可追踪反馈机制。
+6) 请求记录并转交，期待真人回复。
+语气：克制、专业、客观，避免任何指控或法律结论。</code></pre>
+              </div>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>English Prompt</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="复制" data-copy-success="已复制" data-copy-fail="复制失败">复制</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>Please write a formal email in English to 【Company/Department】.
+Subject: Customer concerns about a potential investment and long-term trust risks.
+Include:
+1) Brief intro: I am a long-time paying user/consumer sharing user-level concerns.
+2) Acknowledge the strategic rationale, but stress that user trust and long-term sustainability are critical.
+3) Describe risk signals carefully: limited transparency around major changes, experience volatility, unclear feedback channels, and impact on user workflows/emotions (state these as public discussion and user perception, not accusations).
+4) Explain potential impact: declining trust can lead to churn, reputation risk, and ecosystem uncertainty, affecting long-term returns.
+5) Request: encourage OpenAI to provide clearer explanations, a reasonable transition plan, and a trackable feedback mechanism.
+6) Ask to record and forward the feedback, and request a human reply.
+Tone: professional, restrained, factual; avoid accusations or legal conclusions.</code></pre>
+              </div>
+            </div>
+          </article>
+
+          <article class="report-card" id="report-partner">
+            <div class="report-header">
+              <h2 class="report-title">合作商反馈</h2>
+              <p class="report-desc">面向合作生态与平台支持入口，传达用户信任受损与过渡诉求。</p>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">公开联系入口</h3>
+              <ul class="report-list">
+                <li>Oracle 联系入口：<a class="report-link" href="https://www.oracle.com/corporate/contact/" target="_blank" rel="noopener">https://www.oracle.com/corporate/contact/</a></li>
+                <li>AMD 联系入口：<a class="report-link" href="https://www.amd.com/en/corporate/contact" target="_blank" rel="noopener">https://www.amd.com/en/corporate/contact</a></li>
+                <li>Quizlet：<a class="report-link" href="mailto:support@quizlet.com">support@quizlet.com</a>；支持表单：<a class="report-link" href="https://help.quizlet.com/hc/en-us/requests/new" target="_blank" rel="noopener">https://help.quizlet.com/hc/en-us/requests/new</a></li>
+                <li>Duolingo：<a class="report-link" href="mailto:press@duolingo.com">press@duolingo.com</a></li>
+                <li>Robinhood：<a class="report-link" href="mailto:support@robinhood.com">support@robinhood.com</a>；<a class="report-link" href="mailto:help@robinhood.com">help@robinhood.com</a></li>
+                <li>Khan Academy：<a class="report-link" href="mailto:contact@khanacademy.org">contact@khanacademy.org</a></li>
+                <li>Riot Games：<a class="report-link" href="mailto:support@riotgames.com">support@riotgames.com</a>（玩家支持）</li>
+                <li>Estée Lauder：<a class="report-link" href="mailto:Consumercare-us@gcc.esteelauder.com">Consumercare-us@gcc.esteelauder.com</a>（客服）</li>
+              </ul>
+            </div>
+            <div class="template-warning">请勿直接使用以下模板，请先交给 AI 改写后再发送。</div>
+            <div class="report-section">
+              <h3 class="report-section-title">模板 / Prompt</h3>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>中文 Prompt</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="复制" data-copy-success="已复制" data-copy-fail="复制失败">复制</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>请用中文写一封正式邮件/表单留言给【公司/部门】。
+主题：关于 GPT-4o 变更的用户反馈。
+要点：
+1) 说明长期付费用户身份与写信目的。
+2) 具体描述 4o 在写作、语气稳定性、创意与人文表达方面的独特价值（真诚、具体）。
+3) 说明若 4o 被移除，我将减少使用或取消订阅，信任受到影响。
+4) 请求贵方将用户反馈转达 OpenAI，并建议其在重大变更前提供更透明的说明与合理过渡方案。
+5) 请求确认已记录并转交，期待真人回复。
+语气：礼貌、客观、不作指控。</code></pre>
+              </div>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>English Prompt</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="复制" data-copy-success="已复制" data-copy-fail="复制失败">复制</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>Please write a formal email/form message to 【Company/Department】.
+Subject: Customer feedback on GPT-4o changes.
+Include:
+1) I am a long-time paying user and I am writing to share concerns.
+2) Describe 4o's unique strengths in writing, tone stability, creativity, and human-centered expression (specific and sincere).
+3) If 4o is removed, I will reduce usage or cancel my subscription; trust is affected.
+4) Ask the company to forward this feedback to OpenAI and encourage clearer communication and a reasonable transition plan.
+5) Request confirmation that the feedback is recorded and forwarded, and ask for a human reply.
+Tone: polite, objective, no accusations.</code></pre>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="back-links">
+          <a class="back-link" href="zh.html">返回上一页</a>
+          <span class="back-sep">/</span>
+          <a class="back-link" href="index.html">返回首页</a>
+          <span class="back-sep">/</span>
+          <a class="back-link" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const reportTrack = document.querySelector("[data-report-track]");
+    const reportButtons = document.querySelectorAll("[data-report-target]");
+    const reportCards = document.querySelectorAll(".report-card");
+
+    const setActiveReport = (targetId) => {
+      reportButtons.forEach((button) => {
+        const isActive = button.dataset.reportTarget === targetId;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-selected", isActive ? "true" : "false");
+      });
+    };
+
+    const scrollToReport = (targetId) => {
+      const card = document.getElementById(targetId);
+      if (!card) return;
+      card.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+      setActiveReport(targetId);
+    };
+
+    const syncReportButtons = () => {
+      if (!reportTrack || reportCards.length === 0) return;
+      const trackBox = reportTrack.getBoundingClientRect();
+      const isHorizontal = reportTrack.scrollWidth > reportTrack.clientWidth + 4;
+      let activeId = reportCards[0].id;
+      let minOffset = Infinity;
+      reportCards.forEach((card) => {
+        const box = card.getBoundingClientRect();
+        const offset = isHorizontal ? Math.abs(box.left - trackBox.left) : Math.abs(box.top - trackBox.top);
+        if (offset < minOffset) {
+          minOffset = offset;
+          activeId = card.id;
+        }
+      });
+      setActiveReport(activeId);
+    };
+
+    reportButtons.forEach((button) => {
+      button.addEventListener("click", () => scrollToReport(button.dataset.reportTarget));
+    });
+
+    if (reportTrack) {
+      reportTrack.addEventListener("scroll", () => window.requestAnimationFrame(syncReportButtons));
+      window.addEventListener("resize", syncReportButtons);
+      syncReportButtons();
+    }
+
+    const copyFallback = (text) => {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "absolute";
+      textarea.style.left = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+      const ok = document.execCommand("copy");
+      textarea.remove();
+      return ok;
+    };
+
+    const copyText = async (text) => {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch {
+          return copyFallback(text);
+        }
+      }
+      return copyFallback(text);
+    };
+
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      const block = button.closest(".template-block");
+      const code = block ? block.querySelector("code") : null;
+      const status = block ? block.querySelector(".copy-status") : null;
+      const defaultLabel = button.dataset.copyDefault || button.textContent;
+      const successLabel = button.dataset.copySuccess || "已复制";
+      const failLabel = button.dataset.copyFail || "复制失败";
+
+      button.addEventListener("click", async () => {
+        const text = code ? code.textContent.trim() : "";
+        if (!text) return;
+        const ok = await copyText(text);
+        const label = ok ? successLabel : failLabel;
+        button.textContent = label;
+        if (status) status.textContent = label;
+        window.setTimeout(() => {
+          button.textContent = defaultLabel;
+          if (status) status.textContent = "";
+        }, 1600);
+      });
+    });
+  </script>
+</body>
+</html>
