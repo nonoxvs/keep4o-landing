@@ -300,6 +300,18 @@
     eggDialog.addEventListener("click", (event) => {
       if (event.target === eggDialog) eggDialog.close();
     });
+
+    document.querySelectorAll(".action-card").forEach((card) => {
+      const link = card.querySelector(".action-link");
+      if (!link) return;
+      card.addEventListener("click", (event) => {
+        if (event.target.closest(".checkin-btn")) return;
+        if (event.target.closest("[data-open-egg]")) return;
+        if (event.target.closest("button")) return;
+        if (event.target.closest("a")) return;
+        window.location.href = link.href;
+      });
+    });
   </script>
 </body>
 </html>
