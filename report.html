@@ -18,12 +18,82 @@
         <p class="note">以下内容仅整理公开联系入口与模板建议；请自行甄别并谨慎提交。</p>
 
         <div class="report-switch" role="tablist" aria-label="反馈板块切换">
-          <button class="report-btn is-active" type="button" data-report-target="report-openai" aria-controls="report-openai" aria-selected="true">官方反馈</button>
+          <button class="report-btn is-active" type="button" data-report-target="report-ftc" aria-controls="report-ftc" aria-selected="true">最新反馈</button>
+          <button class="report-btn" type="button" data-report-target="report-openai" aria-controls="report-openai" aria-selected="false">官方反馈</button>
           <button class="report-btn" type="button" data-report-target="report-investor" aria-controls="report-investor" aria-selected="false">投资方反馈</button>
           <button class="report-btn" type="button" data-report-target="report-partner" aria-controls="report-partner" aria-selected="false">合作商反馈</button>
         </div>
 
         <div class="report-cards" data-report-track>
+          <article class="report-card" id="report-ftc">
+            <div class="report-header">
+              <h2 class="report-title">向 FTC 集体提交投诉行动指南</h2>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">隐私提醒</h3>
+              <p class="report-hint">请勿在公开平台分享包含姓名、邮箱、地址、账单等隐私信息的截图。提交时如需截图留存，请务必遮挡个人信息。</p>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">核心目标</h3>
+              <p class="report-hint">通过 FTC 官方渠道提交投诉，形成可追踪的集体投诉记录。在线平台打不开再使用邮箱作为备用方式。</p>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">投诉入口</h3>
+              <ul class="report-list">
+                <li>在线平台（优先）：<a class="report-link" href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">ReportFraud.ftc.gov</a></li>
+                <li>备用邮箱：<a class="report-link" href="mailto:opa@ftc.gov">opa@ftc.gov</a>（在线平台打不开再用）</li>
+              </ul>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">投诉流程（一步步）</h3>
+              <ul class="report-list">
+                <li>进入平台：打开 ReportFraud.ftc.gov（建议美区网络）。</li>
+                <li>网站为英文，可用浏览器翻译功能。</li>
+                <li>选择分类：Online Services / Subscription（优先），或 Something else（备选）。</li>
+                <li>Report details：是否付费选 Yes，其余按实际填写。</li>
+                <li>Company info：选择 Yes，然后填写 OpenAI / ChatGPT，3180 18th Street, San Francisco, CA 94110，legal@openai.com。</li>
+                <li>Problem details：使用下方提示词生成英文投诉信。</li>
+              </ul>
+            </div>
+            <div class="template-warning">请勿直接使用以下模板，请先交给 AI 改写后再发送。</div>
+            <div class="report-section">
+              <h3 class="report-section-title">投诉正文提示词</h3>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>中文 Prompt（生成英文投诉信）</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="复制" data-copy-success="已复制" data-copy-fail="复制失败">复制</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>请基于以下核心事实与法律分析角度，为我撰写一份提交给美国联邦贸易委员会（FTC）的正式投诉信。要求格式：正式商业信函格式，语气客观、严肃、基于事实。结构：先清晰陈述事实，再系统性说明其行为可能违反相关消费者保护法规。目标：请求 FTC 对 OpenAI 的相关行为展开调查。语言：流畅、专业英文。</code></pre>
+              </div>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">参考角度（安全表述）</h3>
+              <ul class="report-list">
+                <li>公开承诺与实际决策落差：沟通透明度不足、缓冲期不够，影响既有订阅与工作流。</li>
+                <li>数据处理不透明的担忧：用户对数据去向与迁移说明不清晰存在担忧。</li>
+                <li>变相强迫消费的担忧：免费 → 付费 / 模型切换导致成本上升。</li>
+                <li>社会责任与隐私担忧（谨慎）：对隐私收集与功能一致性存在疑虑，请求监管机构核查。</li>
+              </ul>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">提交与打卡</h3>
+              <ul class="report-list">
+                <li>提交前检查信息无误。</li>
+                <li>可截图留存（务必遮挡隐私）。</li>
+                <li>完成打卡： 【昵称】已完成 FTC 投诉提交。</li>
+              </ul>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">重要提醒</h3>
+              <ul class="report-list">
+                <li>只写真实经历，避免夸大。</li>
+                <li>避免直接定性“违法/欺诈”等词。</li>
+                <li>注意隐私保护。</li>
+              </ul>
+            </div>
+          </article>
+
           <article class="report-card" id="report-openai">
             <div class="report-header">
               <h2 class="report-title">OpenAI 官方反馈</h2>

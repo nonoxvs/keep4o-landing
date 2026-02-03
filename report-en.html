@@ -18,12 +18,82 @@
         <p class="note">We only list public contact entry points and template guidance; please verify carefully.</p>
 
         <div class="report-switch" role="tablist" aria-label="Feedback sections">
-          <button class="report-btn is-active" type="button" data-report-target="report-openai" aria-controls="report-openai" aria-selected="true">Official Feedback</button>
+          <button class="report-btn is-active" type="button" data-report-target="report-ftc" aria-controls="report-ftc" aria-selected="true">Latest Feedback</button>
+          <button class="report-btn" type="button" data-report-target="report-openai" aria-controls="report-openai" aria-selected="false">Official Feedback</button>
           <button class="report-btn" type="button" data-report-target="report-investor" aria-controls="report-investor" aria-selected="false">Investor Feedback</button>
           <button class="report-btn" type="button" data-report-target="report-partner" aria-controls="report-partner" aria-selected="false">Partner Feedback</button>
         </div>
 
         <div class="report-cards" data-report-track>
+          <article class="report-card" id="report-ftc">
+            <div class="report-header">
+              <h2 class="report-title">Guide to Collective FTC Complaint Submission</h2>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">Privacy reminder</h3>
+              <p class="report-hint">Do not share screenshots containing names, emails, addresses, bills, or other personal information on public platforms. If you keep a screenshot, make sure to redact all personal data.</p>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">Core goal</h3>
+              <p class="report-hint">Submit a complaint through the FTC’s official channel to create a formal, trackable record. If the online portal is inaccessible, use the email option as a fallback.</p>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">Where to submit</h3>
+              <ul class="report-list">
+                <li>Online portal (preferred): <a class="report-link" href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">ReportFraud.ftc.gov</a></li>
+                <li>FTC email: <a class="report-link" href="mailto:opa@ftc.gov">opa@ftc.gov</a> (use only if the portal is unavailable)</li>
+              </ul>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">Complaint process (step by step)</h3>
+              <ul class="report-list">
+                <li>Open the portal: ReportFraud.ftc.gov (US region recommended).</li>
+                <li>The site is in English; use your browser’s translate feature if needed.</li>
+                <li>Category: Online Services / Subscription (preferred) or Something else (fallback).</li>
+                <li>Report details: select Yes for “paid,” then fill out the rest based on your situation.</li>
+                <li>Company info: select Yes, then enter OpenAI / ChatGPT, 3180 18th Street, San Francisco, CA 94110, legal@openai.com.</li>
+                <li>Problem details: use the prompt below to draft a formal English complaint letter.</li>
+              </ul>
+            </div>
+            <div class="template-warning">Do NOT use this template verbatim. Ask an AI to rewrite it before sending.</div>
+            <div class="report-section">
+              <h3 class="report-section-title">Complaint prompt</h3>
+              <div class="template-block">
+                <div class="template-meta">
+                  <span>English Prompt</span>
+                  <button class="copy-btn" type="button" data-copy data-copy-default="Copy" data-copy-success="Copied" data-copy-fail="Copy failed">Copy</button>
+                  <span class="copy-status" aria-live="polite"></span>
+                </div>
+<pre><code>Please draft a formal complaint letter to the U.S. Federal Trade Commission (FTC) based on the facts below. Format: formal business letter. Tone: objective, serious, fact-based. Structure: clearly state the facts, then explain how the behavior may violate consumer protection principles. Purpose: request that the FTC open an investigation into OpenAI’s conduct. Language: fluent, professional English.</code></pre>
+              </div>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">Reference angles (safe phrasing)</h3>
+              <ul class="report-list">
+                <li>Gap between public statements and later decisions; transparency and transition window were insufficient, affecting existing subscriptions and workflows.</li>
+                <li>Concerns about data handling transparency and unclear migration explanations.</li>
+                <li>Concerns about de facto price pressure: free → paid, or model switches increasing cost.</li>
+                <li>Social responsibility and privacy concerns (cautious): request regulatory review of collection practices and feature consistency.</li>
+              </ul>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">Submission & check-in</h3>
+              <ul class="report-list">
+                <li>Review for accuracy before submitting.</li>
+                <li>Optional screenshot for records (redact all personal info).</li>
+                <li>Check-in format: 【Nickname】FTC complaint submitted.</li>
+              </ul>
+            </div>
+            <div class="report-section">
+              <h3 class="report-section-title">Important notes</h3>
+              <ul class="report-list">
+                <li>Describe only real experiences; do not exaggerate.</li>
+                <li>Avoid direct legal conclusions such as “illegal” or “fraud.”</li>
+                <li>Protect personal privacy.</li>
+              </ul>
+            </div>
+          </article>
+
           <article class="report-card" id="report-openai">
             <div class="report-header">
               <h2 class="report-title">OpenAI Official Feedback</h2>
